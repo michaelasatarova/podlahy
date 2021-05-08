@@ -1,0 +1,30 @@
+.datepicker{
+    width: 398px;
+	margin-top: 50px;
+}
+
+.custom-datepicker{
+    width: 398px;
+    label{
+        width: 34%;
+        select{
+            padding: 10px;
+            width: 100% !important;
+        }
+    }
+    label.wrap:after {
+        top: 45px;
+        right: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 890px) {
+    .custom-datepicker{
+        width: 100%;
+        label.wrap:after {
+        top: 14px;
+        right: 13px;
+         }
+    } 
+}

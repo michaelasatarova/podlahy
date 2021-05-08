@@ -1,0 +1,70 @@
+
+    .top-product{
+        width: 330px;
+        height: 441px;
+        background-color: $white;
+        margin: 20px 10px;
+
+        @include for-mikro-only{
+            width: 320px;
+        }
+        @include for-xs-only{
+            margin: 10px;
+        }
+
+        .vodeodolny{
+            padding: 3px;
+            background-color: #c9f1ee;
+            position: absolute;
+            width: 93px;
+            height: 23px;
+            margin: 10px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .akcia{
+            padding: 3px;
+            background-color: $dark-salmon;
+            color: $white;
+            height: 23px;
+            position: absolute;
+            width: 93px;
+            margin: 10px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        img{
+            @include for-mikro-only{
+                width: 320px;
+            }
+        }
+        
+        .tp{
+            padding: 15px;
+            border:1px solid #efe9e9dd;
+            h5{
+               font-weight: bold;
+               color: $dark-salmon;
+            }
+            p{
+                text-align: left;
+                height: 42px;
+            }
+            button{
+                width:115px;
+            }
+            .like{
+                background-color: #a7a4a4;
+                border-radius: 50px;
+                height: 32px;
+                width: 32px;
+                padding: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+    }

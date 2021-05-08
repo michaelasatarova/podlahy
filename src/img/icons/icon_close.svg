@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.728" height="12.728" viewBox="0 0 12.728 12.728">
+    <defs>
+        <style>
+            .cls-1{fill:#cc6262}
+        </style>
+    </defs>
+    <g id="icon_close">
+        <g id="Hamburger_menu">
+            <g id="Group_74" transform="rotate(-45 13.657 5.657)">
+                <path id="Path_38" d="M15 2H1a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2z" class="cls-1"/>
+            </g>
+            <g id="Group_75">
+                <path id="Path_39" d="M15 2H1a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2z" class="cls-1" transform="rotate(45 .707 1.707)"/>
+            </g>
+        </g>
+    </g>
+</svg>

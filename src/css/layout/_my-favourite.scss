@@ -1,0 +1,19 @@
+.my-favourite{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+@media only screen and (max-width: 1168px) {
+   .my-favourite{
+       justify-content: space-around;
+   }
+}
+
+@media only screen and (max-width: 1168px) {
+    .my-favourite{
+        justify-content: center;
+    }
+ }
+

@@ -1,0 +1,179 @@
+//GENERAL
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    }
+
+    
+    h1{
+        font-size: 43px;
+        @include for-sm-only{
+            font-size: 32px;
+        }
+        
+    }
+    h2{
+        font-size: 32px;
+        @include for-sm-only{
+            font-size: 24px;
+        }
+    }
+    h3{
+        font-size: 24px;
+        @include for-sm-only{
+            font-size: 18px;
+        }
+    }
+    h4{
+        font-size: 18px;
+    }
+    h5{
+        font-size: 16px;
+    }
+
+    ul{
+        list-style: none;  
+        padding: 0;
+    }
+
+    a{
+        text-decoration: none;
+        color: #323232;
+        cursor:pointer;
+    }
+
+     input{
+        outline: none;
+        border: none;
+    }
+
+    select{
+        outline:none;
+    }
+
+    /*CUSTOM CLASSES*/
+
+    .custom-container{
+        @include sm-up{
+            width: 90%;
+            margin:auto;
+        }
+        @include xxl-up{
+            width:1641px;
+            margin:auto;
+        }
+ 
+    }
+
+    .custom-container2{
+        @include sm-up{
+            width: 80%;
+            margin:auto;
+            height: 100%;
+        }
+
+        @include xxl-up{
+            width:1350px;
+            margin:auto;
+        }
+
+    }
+
+    .custom-container3{
+        @include for-sm-only{
+            width: 100%;
+            height: 100%;
+        }
+        @include sm-up{
+            width: 100%;
+            height: 100%;
+        }
+
+        @include xl-up{
+            width:91%;
+            float: right;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        @include xxl-up{
+            width:82%;
+            float: right;
+            
+        }
+
+    }
+
+    .mt-10{
+        margin-top: 100px;
+    }
+
+    .dark-salmon{
+        color: $dark-salmon;
+    }
+
+    .like-product{
+        stroke: $white;
+        fill:none;
+        cursor: pointer;
+    }
+    .like-product-fill{
+        fill:$white;
+    }
+   
+    //page navigation top
+    .page-navigation{
+        display: flex;
+        a, p{
+            margin-right: 5px;
+            color:$dark-salmon;
+            text-decoration: none;
+        }
+        a{
+            cursor: pointer;
+        }
+        a:last-child, p:last-child{
+            color: $dark;
+        } 
+    }
+
+
+    //header  in send order contact...
+    .heading-bg {
+        background-color: $brownish-pink;
+        .heading{ 
+            height: 160px;
+            color: $white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                margin: 0;
+            }
+        
+        @include for-sm-only{
+            align-items: flex-start;
+            padding: 30px;
+        }
+    }
+
+}
+
+.desktop-only{
+    @include for-sm-only{
+        display: none;
+    }
+}
+    
+
+
+   

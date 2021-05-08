@@ -1,0 +1,69 @@
+.order-send  {
+    .order-send-header{
+        background-color: $brownish-pink;
+        height: 160px;
+        color: $white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include for-sm-only{
+            display: none;
+        }
+        h2{
+            margin: 0;
+        }
+    }
+  
+  }
+
+  .os-s1{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      h1{
+          margin-bottom: 20px;
+          svg{
+              margin-right: 10px;
+          }
+      }
+      p{
+          font-size: 20px;
+          color: $dark;
+          max-width: 547px;
+          margin: 40px 0;
+          span{
+              font-weight: bold;
+          }
+          .order-send-email{
+              color: #05aefb;
+              font-weight: 500;
+          }
+      }
+      button{
+          width: 252px;
+      }
+  }
+
+  @media only screen and (max-width: 1250px) {
+        .os-s1{
+            flex-direction: column-reverse;
+            text-align: center;
+
+            h1{
+                display: flex;
+                flex-direction: column;
+                svg{
+                    margin: 20px auto;
+                }
+            }
+            p{
+                margin: 20px auto;
+            }
+            button{
+                margin-top: 20px;
+            }
+        }
+  }

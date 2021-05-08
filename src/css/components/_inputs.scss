@@ -1,0 +1,52 @@
+     //input counter
+     .number-input {
+        border: 1px solid #D4E2E4;
+        display: inline-flex;
+        width: 91px;
+        height: 39px;
+        margin-top: 15px;
+
+    }
+    
+    .number-input,
+    .number-input * {
+        box-sizing: border-box;
+    }
+    
+    .number-input button {
+        outline:none;
+        text-align: center;
+        -webkit-appearance: none;
+        background-color:$white;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        width: 39px;
+        height: 36px;
+        cursor: pointer;
+        margin: 0 auto;
+        position: relative;
+    }
+    /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+    .number-input input[type=number] {
+        font-family: sans-serif;
+        max-width: 2rem;
+        padding: .5rem;
+        border: none;
+        border-width: 1px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color:$dark;
+        outline: none;
+    }

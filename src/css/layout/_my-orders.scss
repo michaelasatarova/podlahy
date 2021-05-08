@@ -1,0 +1,52 @@
+.my-orders{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ margin: 30px auto;
+ 
+
+    .mobile-only{
+        display: none;
+
+        @include for-sm-only{
+            display: block;
+        }
+    }
+}
+
+.order{
+    width: 335px;
+    height: 236px;
+    background-color: $white;
+    color: $dark;
+    margin: 20px auto;
+    border:1px solid #e8e8e8;
+    padding: 30px;
+
+    h5, p{
+        font-size:14px;
+        line-height: 1.21;
+    }
+
+    .zaplatene{
+        color:#1a6e51;
+        padding: 10px;
+        background-color: #cbf5cc ;
+    }
+    span{
+        color: #05aefb;
+    }
+}
+
+
+@media only screen and (max-width: 890px) {
+    .order{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .order{
+        margin: 10px 40px;
+    }
+}

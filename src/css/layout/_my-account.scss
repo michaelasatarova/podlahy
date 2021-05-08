@@ -1,0 +1,222 @@
+.my-account{
+    background-image: url(/src/img/bg-section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .my-account-navi{
+        display:flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: 1px solid #dddddd;
+        padding-bottom: 15px ;
+
+        .activ-my-account-link{
+            text-decoration: none;
+            color: $dark-salmon;
+        }
+        ul{
+            display:flex;
+            justify-content: space-between;
+            width: 55%;
+            li{
+                padding: 0 10px;
+                a{
+                    padding-bottom: 31px;
+                    &:hover, &:focus, &:active{
+                        text-decoration: none;
+                        border-bottom: 3px solid $dark-salmon;
+                        color: $dark-salmon;
+                    }
+                }
+                .activ-my-account-link{
+                    text-decoration: none;
+                    border-bottom: 3px solid $dark-salmon;
+                    color: $dark-salmon;
+                }
+            }
+            li:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+    
+    
+    form{
+        margin: 40px auto;
+        width: 812px;
+        .user-avatar{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                height: 150px;
+                border:1px solid #dddddd;
+                background: #fff;
+
+                .avatar{
+                    width: 110px;
+                    height: 110px;
+                    background: transparentize($dark, 0.93);
+                }
+
+                label[for="upload-photo"]{
+                color: $dark-salmon;
+                cursor: pointer;
+                border: 3px solid $dark-salmon;
+                border-radius: 60px;
+                width: 214px;
+                height: 61px;
+                padding: 18px;
+                font-size: 14px;
+                font-weight: bold;
+                text-align: center;
+
+            }
+            #upload-photo {
+                opacity: 0;
+                position: absolute;
+            }
+        }
+
+        .form-data-row{
+            display: flex;
+            justify-content: space-between;
+            .mobile-only{
+                display: none;
+            }
+            label{
+                display:flex;
+                flex-direction: column;
+
+                input, select{
+                    width: 398px;
+                    height: 50px;
+                    padding-left: 15px;
+                    border-radius: 3px;
+                    border:1px solid #dddddd;
+                }
+                p{
+                    margin-top:10px;
+                    margin-bottom: 5px;
+                }
+                span{
+                    color: $dark-salmon;
+                }
+                
+            }
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width: 1240px) {
+
+    .my-account{
+        .my-account-navi{
+            ul{
+                width: 620px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .my-account{
+        .my-account-navi{        
+            .desktop-only{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+
+    .my-account{
+        .my-account-navi{  
+            border:0;      
+            ul{
+                display: none;
+            }
+        }
+        form{
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 890px) {
+
+    .my-account{
+        form{
+           width: 100%;
+           padding: 0 40px;
+           button{
+               margin: 0 auto;
+           }
+           .address-heading{
+               margin-top: 30px;
+           }
+           .form-data-row{
+               flex-wrap: wrap;
+               label{
+                   width: 100%;
+                   input, select{
+                       width: 100%;
+                   } 
+                   .dp-p{
+                            display: none;
+                        }
+                }
+                 .mobile-only{
+                    display: block;
+                    }
+   
+                .gender{
+                    margin-bottom: 30px ;
+                }
+                .gender.wrap:after, .country.wrap:after {
+                    right: -40px;
+                    top:44px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .my-account{
+         h2{
+                width: 100%;
+                padding: 0 40px;
+            }
+        form{
+            .user-avatar{
+                flex-direction: column;
+                height: 100%;
+                padding: 20px;
+                text-align: center;
+                .avatar{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .my-account{
+        form{
+           .form-data-row{
+                .gender.wrap:after, .country.wrap:after {
+                    right: 2px;
+                }
+            }
+        }
+    }
+}

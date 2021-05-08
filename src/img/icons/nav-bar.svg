@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14">
+    <defs>
+        <style>
+            .cls-1{fill:#cc6262}
+        </style>
+    </defs>
+    <g id="Group_385" transform="translate(-320 -65)">
+        <rect id="Rectangle_84" width="20" height="2" class="cls-1" rx="1" transform="translate(320 65)"/>
+        <rect id="Rectangle_85" width="20" height="2" class="cls-1" rx="1" transform="translate(320 71)"/>
+        <rect id="Rectangle_86" width="20" height="2" class="cls-1" rx="1" transform="translate(320 77)"/>
+    </g>
+</svg>

@@ -1,0 +1,209 @@
+.category-page{
+    background-color: $light2;
+    .cp-s1{
+        background-color: $brownish-pink;
+        margin-bottom: 20px;
+        color: $white;
+
+        @include for-sm-only{
+            height: 100%;
+        }
+        @include sm-up{
+            height: 120%;
+        }
+
+        @include xl-up{
+            height: 280px;
+        }
+
+
+        .cp-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 859px;
+            margin: 10px 20px 10px;
+
+            h2{
+                text-align: left;
+            }
+            p{
+                margin: 10px 0;
+            }
+            span{
+                color: $dark;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .cp-s2{
+        .category-navi{
+            display: flex;
+            justify-content: space-between;
+                p{
+                    margin-right: 30px;
+                    padding-bottom: 17px;
+                    margin-top: 16px;
+                    margin-bottom: 0;
+                    cursor: pointer;
+                    &:hover, &:focus, &:active{
+                        border-bottom: 1px solid $dark-salmon;
+                        color: $dark-salmon;
+                    }
+                }
+                p:last-child{
+                    margin-right: 0;
+                }
+            
+            }
+
+            .category-products{
+                margin-left: 6%;
+                .top-products{
+                    display:flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    width: 100%;
+
+                    @include for-xs-only{
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                   
+                }
+                button{
+                    width: 192px;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    
+}
+
+
+
+// pagination bootstrap
+.pagination-lg{
+    .page-item{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        text-align: center;
+        
+         .page-link{
+             border-radius: 50% !important;
+             color: $dark-salmon;
+             border: 1px solid #dddddd;
+             font-size: 10px;
+             text-align: center;
+             padding:10px ;
+
+             &:hover, &:focus, &:active{
+                background-color: $dark-salmon; 
+                color: $white;
+             }
+
+         }
+
+         .active-site{
+            background-color: $dark-salmon !important; 
+            color: $white !important;
+         }
+    }
+} 
+
+@media only screen and (max-width: 1730px) {
+    .category-page{
+        .cp-s2{
+            .category-products {
+                .top-products {
+                    display: flex;
+                    justify-content: center !important;
+                }
+            }
+        } 
+    } 
+  }
+
+
+@media only screen and (max-width: 1010px) {
+
+    .category-page{
+        .cp-s2{
+            .headline-desktop{
+                display: none;
+            }
+            .category-products {
+                .top-products {
+                    display: flex;
+                    justify-content: center !important;
+                }
+            }
+        } 
+    } 
+   
+    .cp-s1{
+        .cp-intro{
+            display: flex;
+            flex-direction: column-reverse  !important;
+
+            .cp-text{
+                margin: 20px auto;
+                padding: 20px;
+            }
+        }
+    }
+
+    .cf{
+        flex-wrap: wrap;
+        .category-filter{
+            display: none;
+        }
+     } 
+     .headline-mobile{
+        display: block !important;
+    }
+    .headline-desktop{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 670px) {
+    .category-page{
+        .cp-s2 {
+            .category-navi{
+                margin: 0 20px;
+                p{
+                    margin-right: 20px;
+                }
+            }
+            .category-products {
+                margin-left: 0;
+                button{
+                    width: 330px;
+                }
+            }
+        }
+    } 
+
+    .cf{
+        display: block !important;
+    }
+
+    .page-navigation, .headline-mobile {
+        padding: 0 20px;
+    }
+    .border-bottom{
+        border: 0px !important;
+    }
+
+    .cp-pagination{
+        flex-wrap: wrap;
+        justify-content: center !important;
+
+    }
+}

@@ -1,0 +1,87 @@
+button{
+    cursor:pointer;
+    border:none;
+    outline:none !important;
+    background:none;
+}
+
+.small-btn{
+   background-color: $dark-salmon;
+   color: $white;
+   height: 33px;
+   border-radius: 60px; 
+   outline: none;
+
+}
+
+.big-empty-btn{
+    background: transparent;
+    border-radius: 60px;
+    height: 61px;
+    outline: none;
+}
+
+//btn color
+.btn-dark-salmon{
+    color: $dark-salmon;
+    border: 1px solid $dark-salmon;
+    outline: none;
+}
+
+.btn-white{
+    color:$white;
+    border: 1px solid $white;
+    outline: none;
+    @include for-mikro-only{
+        width: 100% !important;
+    }
+}
+
+.btn-submit-dark-salmon{
+    background: $dark-salmon;
+    height: 54px;
+    color: $white;
+    font-weight: 500;
+    outline: none;
+
+}
+
+.btn-login{
+    color: $dark-salmon;
+    border: 3px solid $dark-salmon;
+    width: 186px;
+    height: 61px;
+    border-radius:60px ;
+    font-weight: bold;
+    outline: none;
+
+    @include for-sm-only{
+        color: $white;
+        background-color: $dark-salmon;
+        width: 100% !important;
+    }
+}
+
+.btn-contact{
+    border: 3px solid $dark-salmon;
+    width: 295px;
+    height: 61px;
+    border-radius:60px ;
+    font-weight: bold;
+    color: $white;
+    background-color: $dark-salmon;
+    outline: none;
+}
+
+.loading-btn{
+    width: 100%;
+    color: $dark-salmon;
+    border: 2px solid $dark-salmon;
+    border-radius: 5px;
+    height: 70px;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 30px;
+    outline: none;
+
+}

@@ -1,0 +1,144 @@
+.sign-in-or-up{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    padding-top: 190px;
+    background-image: url('/src/img/bg-login.jpg');
+    background-size: cover;
+
+    .registration-form{
+        height: 580px;
+    }
+    .login-form{
+        height: 536px;
+    }
+
+    form{
+        width: 536px;
+        padding: 50px;
+        background-color: $white;
+        border-radius: 2px;
+        color: $dark;
+        label{
+            p{
+                margin: 3px;
+                span{
+                    color: $dark-salmon;
+                }
+            }
+            input{
+                width: 420px;
+                height: 50px;
+                border: 1px solid $light;
+                padding-left: 20px;
+                border-radius: 2px;
+            }
+        }
+        .remember-me{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            p{
+                margin-top: 2px;
+                font-size: 14px;
+            }
+            a{
+                color: $dark-salmon;
+                cursor: pointer;
+                &:hover{
+                   text-decoration:none ;
+                }
+            }
+        }
+        button{
+            width: 186px;
+            height: 61px;
+            font-weight: bold;
+        }
+        .register-me{
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            a{
+                color: #05aefb;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+.sign-in-or-up{
+    height: 660px;
+    padding-top: 60px;
+    form{
+        width: 90%;
+        border-radius: 4px;
+        h1{
+            margin-bottom: 20px !important;
+            margin-top: 10px;
+        }
+        label{
+            width: 100%;
+            input{
+              width: 100%;  
+            }      
+        }
+    }
+}
+
+.remember-me{
+    .custom-checkbox{
+            p{
+                width: 100%;
+            }
+            
+        }
+        a{
+            width: 100%;
+            text-align: right;
+        }
+    }
+
+    .registration-page{
+        height: 690px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .sign-in-or-up{
+        form {
+            padding: 25px;
+        }
+    } 
+}
+
+@media only screen and (max-width: 360px) {
+    .remember-me{
+        flex-wrap: wrap;
+            a{
+                text-align: left;
+            }
+        }
+    }
+
+
+// CHange password
+
+.forgot-password{
+    form{
+        height: 535px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+    .forgot-password{
+        form{
+            h2{
+                margin-top: 20px;
+            }
+        }
+    
+    }
+}

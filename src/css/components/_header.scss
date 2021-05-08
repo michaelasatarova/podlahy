@@ -1,0 +1,243 @@
+.kontakt-top{
+    background-color: $grey; 
+    height: 40px;
+    color: $white;
+
+    .ktc{
+        display:flex;
+        justify-content: space-between;
+
+        a{
+            color: $white;
+            padding: 3px;
+            font-size: 13px;
+            }
+
+        .nav-contact{
+            ul{
+                display:flex;
+                align-items: center;
+                
+                .kontakt-navi{
+                    display:block;
+                    display: flex;
+                    border:none ;
+
+
+                    @include xl-up{
+                        display: none;
+                    }
+                }
+                li:nth-child(2){
+                    border-left: 1px solid $white;  
+                }
+                li{
+                    padding: 10px ;
+                    border-right: 1px solid $white;
+                    
+                    @include for-sm-only{
+                        display: none;
+                    }
+                    @include sm-up{
+                        display: none;
+                    }
+                    @include xl-up{
+                        display: block;
+            
+                    }
+                }
+            }
+        }
+
+        .prihlasenie-registracia{
+            display: flex;
+            justify-content: flex-end;
+            padding: 8px ;
+            border-left: 1px solid $white;
+            border-right: 1px solid $white;
+            height: 40px;
+            p{
+                padding:2px  10px;
+            }
+
+        }
+        
+    }
+       
+}
+
+
+.navigation{
+    height: 88px;
+    display:flex;
+    justify-content: space-between;
+    .navi{
+        display: flex;
+        a{
+            img{
+                position: relative;
+                top: -13px;
+            @include for-sm-only{
+                width: 100px;
+                height: 50px;
+                margin-top: 20px;
+                top: 0;
+                }
+            @include for-sm-only{
+                margin-top: 5px;
+                }
+            }
+        }
+       
+        ul{
+            display:none;
+            align-items: center;
+            margin: 0;
+            @include xl-up{
+                display: flex; 
+            }
+           .dn{
+               display: none;
+           }
+            
+            li{
+                padding:  20px;
+                color: $dark;
+                font-size: 13px;
+                font-weight: 500;
+                a{
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+        .search-bar{
+            margin-right: 20px;
+            input{
+                border-bottom: 1px solid $light;
+                width: 325px;
+                padding: 0 5px;
+                ::placeholder{
+                    color: $light ;
+                }
+
+                @include for-mikro-only{
+                    width: 40px !important;
+                }
+                @include for-sm-only{
+                    width: 100px;
+                }
+                @include sm-up{
+                    width: 200px;
+                }
+                @include md-up{
+                    width: 325px;
+                }
+                @include xl-up{
+                    width: 200px;
+                }
+                @include xxl-up{
+                    width: 325px;
+                }
+            }    
+            .hladaj{
+                position:relative;
+                left:-15px;
+            }
+        
+        }
+    }
+    .basket{
+        border-radius: 50%;
+        background-color: $dark-salmon;
+        border:1px solid $dark-salmon;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        margin:  0 15px;
+    }
+
+    .price{
+        display: flex;
+        margin: 0 10px;
+
+        @include for-sm-only{
+            display: none;
+        }
+
+        @include sm-up{
+            display: none;
+        }
+        @include md-up{
+            display: flex;
+        }
+
+        p{
+            margin:10px;
+            font-size: 13px;
+        }
+        .arrow-down{
+            margin: 17px 0;
+            cursor: pointer;
+            color: $dark;
+            font-weight: 500;
+        }
+    }
+    .nav-bar{
+        display: block;
+        cursor: pointer;
+        @include xl-up{
+            display: none;
+        }
+    }
+}
+
+// classes added on click
+.show-contact{
+    .kontakt-top{
+        height: 100%;
+        .nav-contact{
+            ul{
+                flex-direction: column;
+                align-items: flex-start;
+                li:nth-child(2){
+                    border-left: none;  
+                }
+                li{
+                    display:block;
+                    border:none;
+                }
+            }
+        }
+    }
+}
+
+.show-navi{
+   .navi{
+       ul{
+           display: block;
+           position: absolute;
+           z-index: 2;
+           background: $white;
+           width: 100%;
+           top: 120px;
+           right: 0px;
+           width: 100vw;
+           padding-left: 120px;
+
+           @include for-sm-only{
+            padding-left: 25px;
+           }
+           .dn{
+               display: block;
+               padding-left: 0;
+           }
+       }
+   }
+}
