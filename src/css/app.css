@@ -65,6 +65,7 @@ a {
 input {
   outline: none;
   border: none;
+  background-color: #fff;
 }
 
 select {
@@ -384,6 +385,12 @@ select {
   margin-right: 20px;
 }
 
+@media (max-width: 375px) {
+  .navigation .search .search-bar {
+    margin-right: 0;
+  }
+}
+
 .navigation .search .search-bar input {
   border-bottom: 1px solid #d6cece;
   width: 325px;
@@ -408,7 +415,7 @@ select {
 
 @media (max-width: 375px) {
   .navigation .search .search-bar input {
-    width: 40px !important;
+    width: 100px !important;
   }
 }
 
@@ -455,6 +462,12 @@ select {
   width: 50px;
   height: 50px;
   margin: 0 15px;
+}
+
+@media (max-width: 375px) {
+  .navigation .basket {
+    margin-left: 0;
+  }
 }
 
 .navigation .price {
@@ -1855,7 +1868,18 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 20px 0;
+}
+
+@media (max-width: 375px) {
+  .product-detail .action-icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .product-detail .action-icons .action-icon-group {
@@ -1868,6 +1892,14 @@ select {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+@media (max-width: 375px) {
+  .product-detail .action-icons .action-icon-group {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .product-detail .action-icons .action-icon-group p {
@@ -2634,6 +2666,7 @@ select {
   }
   .my-account form .form-data-row label input, .my-account form .form-data-row label select {
     width: 100%;
+    background-color: #fff;
   }
   .my-account form .form-data-row label .dp-p {
     display: none;

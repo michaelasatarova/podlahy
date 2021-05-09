@@ -118,12 +118,20 @@
     .action-icons{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin: 20px 0;
+        @include for-mikro-only{
+            flex-direction: column;
+        }
 
         .action-icon-group{
             display: flex;
             justify-content: space-between;
             align-items: baseline;
+
+            @include for-mikro-only{
+                justify-content:flex-start;
+            }
 
             p{
                 margin-left:10px;
